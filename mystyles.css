@@ -5,30 +5,71 @@ body {
 
 #main {
   display: grid;
-  grid-template-column: 90%;
+  grid-template-columns: 90%;
   /*justify-content:center;*/
-  height: 90%;
+  height: auto;
   background-color: yellow;
+  grid-gap: 10px;
+  justify-content: center;
 }
 #title {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: blue;
+  /*background-color: blue;*/
 }
 
 #main-name {
   justify-self: center;
+  font-size: xx-large;
+  font-weight: bolder;
 }
 
 #nicknames {
   justify-self: center;
+  font-size: small;
+  margin-top: 0px;
+  padding: 3px;
 }
 
 #img-div {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80% 20%;
+  background-color: #ffffcc;
+  justify-items: center;
+  padding: 3px;
 }
 #image {
-  align-self: center;
-  max-width: 90%;
+  justify-self: center;
+  width: 50%;
+  height: auto;
+}
+#img-caption {
+  padding: 0.6px;
+  font-size: small;
+}
+
+#rop {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  background-color: blue;
+  margin: 15px;
+  padding: 15px;
+  height: auto;
+}
+
+#trib-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  justify-items: center;
+  background-color: blue;
+  margin: 15px;
+  padding: 15px;
+}
+
+#yheader {
+  justify-self: left;
 }
