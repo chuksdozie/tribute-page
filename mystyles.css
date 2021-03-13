@@ -1,0 +1,34 @@
+body {
+  background: linear-gradient(35deg, #ccffff, #ffffcc);
+  font-family: poppins;
+}
+
+#main {
+  display: grid;
+  grid-template-column: 90%;
+  /*justify-content:center;*/
+  height: 90%;
+  background-color: yellow;
+}
+#title {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: blue;
+}
+
+#main-name {
+  justify-self: center;
+}
+
+#nicknames {
+  justify-self: center;
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+}
+#image {
+  align-self: center;
+  max-width: 90%;
+}
