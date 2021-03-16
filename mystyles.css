@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   /*background: linear-gradient(35deg, #ccffff, #ffffcc, #000000);*/
   font-family: poppins;
@@ -5,18 +9,20 @@ body {
 
 #main {
   display: grid;
-  grid-template-columns: 90%;
+  grid-template-columns: 100%;
   /*justify-content:center;*/
   height: auto;
   background-image: url(./images/background2.webp);
   grid-gap: 10px;
   justify-content: center;
   padding: 25px;
-  border-radius: 25px;
+  /*border-radius: 25px;*/
 }
+
 #title {
   display: grid;
   grid-template-columns: 1fr;
+  align-items: center;
   /*background-color: blue;*/
   justify-items: center;
   background-color: rgba(225, 225, 225, 0.9);
@@ -32,30 +38,29 @@ body {
 
 #nicknames {
   justify-self: center;
-  font-size: small;
+  font-size: medium;
   margin-top: 0px;
   padding: 3px;
 }
 
 #img-div {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns:1fr;
   grid-template-rows: auto 20%;
   background-color: rgba(225, 225, 225, 0);
   justify-items: center;
-  width: 90%;
   padding: 5px;
   grid-area: 1/1/2/3;
 }
 #image {
   justify-self: center;
-  width: 50vw;
+  width: 30rem;
   height: auto;
 }
 #img-caption {
   justify-self: center;
-  padding: 0.6px;
-  font-size: small;
+  padding: 0.6rem;
+  font-size: 0.7rem;
 }
 
 #rop {
@@ -105,6 +110,22 @@ body {
   padding: 5px;
 }
 #s_img{
-  width: 200px;
+  width: 10rem;
   padding: 10px;
+}
+
+a{
+  text-decoration: none;
+  font-size: 0.8rem;
+  color:darkgoldenrod;
+}
+
+@media(max-width:200px){
+
+  #s_img{
+    width: 3rem;
+    padding: 10px;
+  }
+  
+
 }
