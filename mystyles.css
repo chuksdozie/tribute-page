@@ -1,16 +1,21 @@
+/*this ensures that everything on the page fits into the screen*/
 * {
   box-sizing: border-box;
 }
 
+/*this is the parent component*/
 body {
   /*background: linear-gradient(35deg, #ccffff, #ffffcc, #000000);*/
   font-family: poppins;
 }
 
+/*this carries everything on the webpage ie. the title{} and the rest-of-page{}
+ in a grid layout display format */
 #main {
   display: grid;
   grid-template-columns: 100%;
   /*justify-content:center;*/
+  /*height auto ensures that the page keeps stretching vertically with the content*/
   height: auto;
   background-image: url(./images/background2.webp);
   grid-gap: 10px;
@@ -19,20 +24,25 @@ body {
   /*border-radius: 25px;*/
 }
 
+/*this title sweetheart carries the main-name{} and nick-names{}*/
 #title {
   display: grid;
   grid-template-columns: 1fr;
+  /*makes sure that all the components(main-name and nick-names) are aligned to the center*/
   align-items: center;
   /*background-color: blue;*/
   justify-items: center;
   background-color: rgba(225, 225, 225, 0.9);
+  /*gives it the curved edges*/
   border-radius: 25px;
 }
 
 #main-name {
   justify-self: center;
+  /*gives a relatively large fontsize*/
   font-size: xx-large;
   font-weight: bolder;
+  /*takes away the space between itself and the component below it*/
   margin-bottom: 0px;
 }
 
